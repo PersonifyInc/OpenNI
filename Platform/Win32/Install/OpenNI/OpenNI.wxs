@@ -525,10 +525,11 @@
       <Custom Action='UnRegRecorder' Before='RemoveFiles'> REMOVE ~= "ALL" </Custom>
       <Custom Action='UnRegMockNodes' Before='RemoveFiles'> REMOVE ~= "ALL" </Custom>
       <Custom Action='UnRegCodecs' Before='RemoveFiles'> REMOVE ~= "ALL" </Custom>
-      
+
+      <!--
       <Custom Action='driveamd64Install' After='PublishProduct'><![CDATA[NOT Installed AND VersionNT64]]></Custom>
-      
       <Custom Action='drivex86Install' After='PublishProduct'><![CDATA[NOT Installed AND NOT VersionNT64]]></Custom>
+      -->
       
     </InstallExecuteSequence>
   </Product>
